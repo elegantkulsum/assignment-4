@@ -1,13 +1,20 @@
 // Fist task
 function radianToDegree(radian) {
-    return radian * (180 / Math.PI)
+    if (radian * (180 / Math.PI)) {
+        return radian
+    } else {
+        return ('Please Provide a number')
+    }
 }
-let getResult = radianToDegree(25)
+let getResult = radianToDegree(45)
 
-console.log(getResult.toFixed(2), '\n')
+console.log('\n', getResult.toFixed(2), '\n')
+
+
+
+
 
 // Second task
-// let fileName = 'app.js';
 function JavaScriptFile(String) {
     if (String === 'index.js') {
         return true
@@ -18,8 +25,10 @@ function JavaScriptFile(String) {
 let getJavaScriprFile = JavaScriptFile('index.js')
 console.log(getJavaScriprFile, '\n')
 
-// Third task
 
+
+
+// Third task
 function oilPrice(diesel, petrol, octen) {
     const dieselPricePerLiter = 114;
     const petrolPricePerLiter = 130;
@@ -35,10 +44,31 @@ function oilPrice(diesel, petrol, octen) {
 const showOilCost = oilPrice(5, 3, 4)
 console.log(showOilCost, '\n')
 
+
+
+
+
 // Four task
-function publicBusFare() {
+function publicBusFare(totalPersons) {
+    let localTicketCost = 250;
+    let busTotal = totalPersons - (totalPersons % 50);
+    let microBusPerson = totalPersons - busTotal;
+    let microBus = microBusPerson - (microBusPerson % 11);
+    let localBusPerson = microBusPerson - microBus;
+    let localBusCost = localBusPerson * localTicketCost;
+    return localBusCost
+
 
 }
+let perLocalTicketCost = 698;
+let showResult = publicBusFare(perLocalTicketCost)
+console.log(showResult)
+// publicBusFare(perLocalTicketCost)
+
+
+
+
+
 
 // Five task
 function isBestFriend(friendMatch1, friendMatch2) {
@@ -62,7 +92,6 @@ const friendThird = { name: "abul", friend: "kabul" };
 const friendFour = { name: "kabul", friend: "sabul" };
 const friendFive = { name: "doe", friend: "alex" };
 const friendSix = { name: "john", friend: "doe" };
- let getBestFriend = isBestFriend(friendThird, friendTwo)
-console.log(getBestFriend, '\n')
-
+let getBestFriend = isBestFriend(friendThird, friendTwo)
+console.log('\n', getBestFriend, '\n')
 
