@@ -26,8 +26,6 @@ let getJavaScriprFile = JavaScriptFile('index.js')
 console.log(getJavaScriprFile, '\n')
 
 
-
-
 // Third task
 function oilPrice(diesel, petrol, octen) {
     const dieselPricePerLiter = 114;
@@ -43,9 +41,6 @@ function oilPrice(diesel, petrol, octen) {
 }
 const showOilCost = oilPrice(5, 3, 4)
 console.log(showOilCost, '\n')
-
-
-
 
 
 // Four task
@@ -64,10 +59,6 @@ let perLocalTicketCost = 698;
 let showResult = publicBusFare(perLocalTicketCost)
 console.log(showResult)
 // publicBusFare(perLocalTicketCost)
-
-
-
-
 
 
 // Five task
